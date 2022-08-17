@@ -59,6 +59,27 @@ print(forceCon)
 
 更不可能的是，HeLangKotlinScriptImpl **完全兼容 JVM**（并不是基于 JVM，只是兼容，小心我告你），这意味着，你可以无缝切换到 HeLangKotlinScriptImpl 中，这太酷了对吗。
 
+## Hello, world!
+
+赋能单片机开发，何语言 Kotlin 脚本版现已兼容 sprint！使用 `sprint` 函数以提升你的代码性能（？）：
+
+```kotlin
+// Hello, world!
+sprint(72 `|` 101 `|` 108 `|` 108 `|` 111 `|` 44 `|` 32 `|` 119 `|` 111 `|` 114 `|` 108 `|` 100 `|` 33)
+```
+
+## 5G测速
+
+何语言 Kotlin 脚本版现已内置 5G 测速功能，这简直酷毙了不是吗？
+
+一切的一切非常简单，只需要调用：
+
+```kotlin
+test5g()
+```
+
+即可从本行开始5G测速。
+
 ## 总结
 
 Enjoy！
@@ -66,4 +87,3 @@ Enjoy！
 ## 开源
 
 HeLangKotlinScriptImpl is licensed under [WTFPL](LICENSE).
-
