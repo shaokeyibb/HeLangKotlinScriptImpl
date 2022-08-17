@@ -53,6 +53,10 @@ fun test5g() {
     SpeedTester.test()
 }
 
+fun sprint(u8: u8) {
+    println(u8.list.map { Char(it) }.joinToString(separator = "") { it.toString() })
+}
+
 fun evalFile(scriptFile: File): ResultWithDiagnostics<EvaluationResult> {
     val compilationConfiguration = createJvmCompilationConfigurationFromTemplate<HeLangKotlinScript>()
     return BasicJvmScriptingHost().eval(scriptFile.toScriptSource(), compilationConfiguration, null)
