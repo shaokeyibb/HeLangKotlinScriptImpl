@@ -49,6 +49,10 @@ class u8 private constructor(val list: MutableList<Int> = mutableListOf()) {
 
 fun createU8(size: Int): u8 = u8(size)
 
+fun test5g() {
+    SpeedTester.test()
+}
+
 fun evalFile(scriptFile: File): ResultWithDiagnostics<EvaluationResult> {
     val compilationConfiguration = createJvmCompilationConfigurationFromTemplate<HeLangKotlinScript>()
     return BasicJvmScriptingHost().eval(scriptFile.toScriptSource(), compilationConfiguration, null)
