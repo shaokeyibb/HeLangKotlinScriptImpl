@@ -1,5 +1,6 @@
-val array:u8 = 4 `|` 6 `|` 8
-// 4 | 8
+var array:u8 = 4 `|` 6 `|` 8
+array = ++array
+// 5 | 9
 println(array[1 `|` 3])
 
 // Hello, world!

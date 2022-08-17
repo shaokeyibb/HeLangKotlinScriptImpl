@@ -33,6 +33,10 @@ class u8 private constructor(val list: MutableList<Int> = mutableListOf()) {
         return createU8(0).apply { index.list.forEach { list.add(this@u8[it]) } }
     }
 
+    operator fun inc(): u8 {
+        return u8(this.list.map { it + 1 }.toMutableList())
+    }
+
     override fun toString(): String {
         return list.toString()
     }
