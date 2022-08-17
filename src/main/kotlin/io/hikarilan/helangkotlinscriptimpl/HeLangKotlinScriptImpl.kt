@@ -34,7 +34,19 @@ class u8 private constructor(val list: MutableList<Int> = mutableListOf()) {
     }
 
     operator fun inc(): u8 {
-        return u8(this.list.map { it + 1 }.toMutableList())
+        return this + 1
+    }
+
+    operator fun dec(): u8 {
+        return this - 1
+    }
+
+    operator fun plus(i: Int): u8 {
+        return u8(this.list.map { it + i }.toMutableList())
+    }
+
+    operator fun minus(i: Int): u8 {
+        return u8(this.list.map { it - i }.toMutableList())
     }
 
     override fun toString(): String {
