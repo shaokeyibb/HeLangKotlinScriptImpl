@@ -25,6 +25,14 @@ class u8 private constructor(val list: MutableList<Int> = mutableListOf()) {
         index.list.forEach { this.list[it - 1] = value }
     }
 
+    operator fun get(index: Int): Int {
+        return this.list[index - 1]
+    }
+
+    operator fun get(index: u8): u8 {
+        return createU8(0).apply { index.list.forEach { list.add(this@u8[it]) } }
+    }
+
     override fun toString(): String {
         return list.toString()
     }
@@ -35,10 +43,6 @@ class u8 private constructor(val list: MutableList<Int> = mutableListOf()) {
 
     override fun equals(other: Any?): Boolean {
         return list == other
-    }
-
-    operator fun get(index: Int): Int {
-        return this.list[index - 1]
     }
 
 }
