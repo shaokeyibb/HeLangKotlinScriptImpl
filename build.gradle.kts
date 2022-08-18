@@ -16,6 +16,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-scripting-common")
     implementation("org.jetbrains.kotlin:kotlin-scripting-jvm")
     implementation("org.jetbrains.kotlin:kotlin-scripting-jvm-host")
+    implementation("com.google.code.gson:gson:2.9.1")
 }
 
 tasks.withType<KotlinCompile> {

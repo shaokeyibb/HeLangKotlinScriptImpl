@@ -17,7 +17,8 @@ object HeLangKotlinScriptConfiguration : ScriptCompilationConfiguration({
         "io.hikarilan.helangkotlinscriptimpl.u8",
         "io.hikarilan.helangkotlinscriptimpl.|",
         "io.hikarilan.helangkotlinscriptimpl.test5g",
-        "io.hikarilan.helangkotlinscriptimpl.sprint"
+        "io.hikarilan.helangkotlinscriptimpl.sprint",
+        "io.hikarilan.helangkotlinscriptimpl.cyberspaces",
     )
 })
 
