@@ -73,10 +73,6 @@ class u8 private constructor(val list: MutableList<Int> = mutableListOf()) {
 
 fun createU8(size: Int): u8 = u8(size)
 
-fun test5g() {
-    SpeedTester.test()
-}
-
 fun sprint(u8: u8) {
     println(u8.list.map { Char(it) }.joinToString(separator = "") { it.toString() })
 }
