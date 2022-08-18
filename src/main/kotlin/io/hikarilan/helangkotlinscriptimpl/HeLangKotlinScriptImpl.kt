@@ -21,8 +21,16 @@ class u8 private constructor(val list: MutableList<Int> = mutableListOf()) {
 
     constructor(size: Int) : this(list = MutableList(size) { 0 })
 
+    operator fun set(index: Int, value: Int) {
+        if (index == 0) {
+            repeat(list.size) { list[it] = value }
+            return
+        }
+        list[index - 1] = value
+    }
+
     operator fun set(index: u8, value: Int) {
-        index.list.forEach { this.list[it - 1] = value }
+        index.list.forEach { this[it] = value }
     }
 
     operator fun get(index: Int): Int {
