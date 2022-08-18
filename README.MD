@@ -79,6 +79,17 @@ a = ++a
 print(a);
 ```
 
+## 查看你是否在 Cyber Spaces
+
+运行这个非常好函数来检测你是否处于 **Cyber Spaces**：
+
+```kotlin
+// Getting your location...
+// Your location is CHINA.
+// What a pity! It seems that you are not in the Cyber Spaces.
+cyberspaces()
+```
+
 ## 5G测速
 
 何语言 Kotlin 脚本版现已内置 5G 测速功能，这简直酷毙了不是吗？
